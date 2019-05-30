@@ -1,0 +1,12 @@
+{%extends 'home.html'%}
+{%block content%}
+<h1>Detail</h1>
+
+<h1>{{blog.title}}</h1><!--말하는 변수를 보여줘-->
+{{blog.pub_date}}
+<br>
+{{blog.body}}
+<br>
+<a href="{%url 'blog'%}">Blog</a><!--urls에서 이름이 blog인 곳을 실행 시켜줘-->
+<br>
+{%endblock%}
